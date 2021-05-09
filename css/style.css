@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #010202;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #010202 0%,
+    #010202 43%,
+    rgba(1, 2, 2, 0.2) 90.9%
+  );
+  background-repeat: no-repeat;
+  background-position: center right;
+  color: #fff;
+}
+
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 7% 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  font-size: 16px;
+  line-height: 140%;
+  color: #e5e5e5;
+  opacity: 0.4;
+}
+
+.tags > * {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.age {
+  padding: 1px 5px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.description {
+  max-width: 460px;
+  margin-bottom: 36px;
+  font-size: 21px;
+  line-height: 140%;
+}
+
+.button {
+  padding: 11px 26px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2f2f2f;
+  color: #fff;
+  font-size: 16px;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #ea6e20;
+  margin-right: 15px;
+}
+
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+
+/* media queryes */
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 300px;
+    background: url("../img/cover-image.jpg") no-repeat bottom center / 300px;
+  }
+  video {
+    display: none;
+  }
+  .film {
+    padding-top: 2%;
+  }
+  .description {
+    max-width: 333px;
+    font-size: 16px;
+  }
+  .film-logo {
+    max-width: 100%;
+  }
+  .user-name {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-text {
+    display: none;
+  }
+  .app {
+    padding-bottom: 250px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
+}
